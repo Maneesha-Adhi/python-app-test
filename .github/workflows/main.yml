@@ -28,8 +28,8 @@ jobs:
       - name: copy env variables
         run: |
          # cp .travis.env .env
-          curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -",
-          "echo \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list
+          "curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -",
+          "echo \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list"
 
       - name: Install yarn
         run: |
